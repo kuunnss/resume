@@ -1,37 +1,80 @@
-## Welcome to GitHub Pages
+# 严雨涛
 
-You can use the [editor on GitHub](https://github.com/kuunnss/resume/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## 联系方式
+- 手机：18914098203 
+- Github：https://github.com/kuunnss
+- Email：yanyt@boe.com.cn
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 个人信息
 
-```markdown
-Syntax highlighted code block
+ - 男/1994 
+ - 本科/江苏科技大学/物联网工程 2013.9-2017.6
+ - 工作年限：2.5年（c#，java）
+ - 期望职位：Java开发工程师
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## 技能
+1.  熟悉 J2EE，具有面向对象思想，扎实的编程功底以及良好的编码习惯
+2.  熟悉java语言，java基础扎实，理解io、多线程、集合等基础框架
+3.  熟悉数据库原理、以及数据库查询优化，熟练使用 mssql,mysql,redis等数据库
+4.  熟悉docker容器技术
+5.  熟悉服务编排技术，并熟练使用k8s服务编排，有高并发相关处理经验
+6.  熟悉java web,以及spring boot、mybatis、dubbo等主流开源框架
+7.  熟悉maven等项目构建工具
+8.  熟悉使用svn及git进行版本管理
+9.  理解注册中心，并熟练使用zk进行服务注册与发现
+10. 了解linux操作系统
 
-1. Numbered
-2. List
+## 工作经历
 
-**Bold** and _Italic_ and `Code` text
+### 京东方 （2019.7 ~ 至今）
+#### 基础组件及应用
 
-[Link](url) and ![Image](src)
-```
+kong网关 -> java应用及基础组件 -> 数据库搭建
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 苏州食行生鲜电子商务有限公司 （ 2016.12 ~ 2019.6 ）
 
-### Jekyll Themes
+#### 食行商城系统（c#&java 2016.12~2019.6）
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kuunnss/resume/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+涉及主要技术：项目基于Spring boot，ORM层框架使用Mybatis，数据库采用mysql、mssql，RPC框架采用dubbo
+1. 主要负责
+   - 商城首页系统   
+     技术细节：该系统作为高并发典型系统之一，主要采caffine实现一级cache，redis集群实现二级cache,由job定时从Mysql中获取数据刷新redis数据，依赖网关实现服务负载均衡，从而服务在高并发下瞬时响应，实现高可用。
+     
+   - 用户中心（用户地址、用户等级等用户相关）
+   - 登录注册  
+     技术细节：该系统主要实现用户注册，用户登录，用户等级积分地址等一系列与用户相关的操作，在该系统中登录注册等采用redis实现分布式锁，并采用rabbitmq实现消息传递，解耦服务，在注册中采用多重加密算法保证用户账户密码的安全，并采用第三方手机号验证功能防止黑产用户注册，在底层采用Transaction实现用户账户一致性。
+     
+   - 结算页&下单  
+     技术细节：该系统作为最主要的系统之一，结算页主要实现了对用户购物车数据进行获取及整合，并计算可用优惠券、充值卡、积分等，下单服务主要负责对用户选择的优惠进行整合并扣款下单，该系统除了常规redis锁之外，采用future实现异步，降低请求时间。
+     
+   - 验证码（短信、语音、图形）  
+     技术细节：该系统主要联合消息中心对接第三方消息平台，实现短信验证码和语音验证码的发送，采用zxing实现图形验证码的生成。
+     
+   - 微信相关接口对接  
+   - 支付宝相关接口对接  
+     技术细节：该系统主要对接第三方平台，实现通过微信方公众号相关服务及用户可通过微信登录食行商城系统，与支付宝合作实现用户可通过支付宝小程序实现登录，从而在第三方平台中正常使用食行商城系统。
+     
+2. 协助架构工程师完成服务容器化，并将服务从物理机迁移至Kubernetes，实现服务高可用以及平滑发布等。
+3. 将自己维护的大部分c#服务，用java重写。
 
-### Support or Contact
+#### 营销系统（2019.1~2019.6）
+涉及主要技术：项目基于Spring boot，ORM层框架使用Mybatis，数据库采用mysql、mssql，RPC框架采用dubbo，日志模块log4j
+1. 领券中心（优惠券领取以及优惠券秒杀等）
+2. 代言活动
+3. 团购活动  
+  项目细节：该系统主要是为营销人员进行活动所用，领券中心作为高并发典型之一，采用多服务负载均衡保证服务高可用，在底层增加redis分布式锁保证唯一性，防止多领，超领的情况，秒杀活动采用rabbitmq进行解耦及流量削峰。
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### 后台管理系统(2017.6~2019.6)  
+涉及主要技术：项目基于Spring boot，ORM层框架使用Mybatis，数据库采用mysql
+1. 负责充值卡、会员卡等管理后台的接口开发，方便运营人员管理及使用。  
+   项目细节：该系统主要为后台系统实现充值卡会员卡的生成配置和发放，充值卡系统中主要为财务服务，会员卡系统为用户服务，目前已稳定运行2年。
+
+## 个人总结
+1.  积极向上，有较强的适应能力。
+2.  有团队精神和团队意识，有问题绝不推卸。
+
