@@ -11,33 +11,40 @@
 
  - 男/1994 
  - 本科/江苏科技大学/物联网工程 2013.9-2017.6
- - 工作年限：5年
- - 期望职位：Java开发工程师
+ - 工作年限：8年
+ - 期望职位：Java开发工程师&go开发工程师
 
 ---
 
 ## 技能
-1.  熟悉J2EE，具有面向对象思想，扎实的编程功底以及良好的编码习惯
-2.  熟悉java语言，java基础扎实，理解io、多线程、集合等基础框架
-3.  熟练使用 mssql,mysql,redis等
-4.  熟悉时序数据库tdengine
-5.  熟悉docker容器技术
-6.  了解k8s，有高并发相关处理经验
-7.  熟悉java web,以及spring boot、mybatis、elasticsearch、kafka、rabbitmq等主流开源框架
-8.  熟悉spring cloud，有微服务搭建经验。
-9.  熟悉maven等项目构建工具
-10. 熟悉使用svn及git进行版本管理
-11. 理解注册中心，并熟练使用zk、nacos进行服务注册与发现
-12. 熟悉linux
-13. 熟悉支付宝支付、微信支付
-14. 熟悉阿里云，华云等公有云。
+1.  Java：包括spring boot、spring cloud、mybatis、jpa等
+2.  go：包括go-zero，gorm等
+3.  c# python 部分项目轻微使用
+4.  DB：mysql、tdengine、timestream、redis、es等
+5.  熟悉mqtt周边，emqx，iot core，阿里云物联网平台等
+6.  熟悉容器化，包括docker、k8s等
+7.  熟悉注册中心、配置中心，Nacos、Zookeeper等
+8.  熟悉kafka、aws sqs等消息队列
+9.  对户储周边生态比较熟悉，包括2030.5，1547，动态定价，dynamic export，vpp等
 
 
 ## 工作经历
 
-### 上海启源芯动力 （2022.8 ~ 至今）
-#### 智能换电平台
-1.负责车辆管理模块开发
+### Anker （2022.9 ~ 至今）
+#### 户储平台
+1. 用户APP、安装商APP、web等业务性平台，如站点管理、设备管理、OTA、能量统计、能源策略等
+2. 负责设备和云通讯相关，主要采用mqtt协议，emqx&iot core，协议制定、数据流转等
+   
+#### VPP Openapi
+1. 负责 vpp openapi 项目、生态对接，从 0-1 完成openapi项目，包括遥测、控制、回调等，并和合作伙伴沟通对接
+   
+#### 动态电价基础平台
+1. 负责动态电价基础平台搭建，并接入欧洲多家平台，对接提供统一rpc服务
+
+#### 其他生态项目
+1. 负责户储认证项目，如北美1547
+2. 负责南澳、维州dynamic export项目，如sapn、ausnet、citipower等
+
 
 ### 沃太能源 （2021.6 ~ 2022.8）
 #### 工商业物联网平台
